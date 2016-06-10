@@ -9,7 +9,7 @@ public class JeuVie {
 
 	public static void main(String[] args) {
 		new Controleur(new BordDeCote(Ocean.PI));
-		new Controleur(new HauteMer(Ocean.ALEA));
+		//new Controleur(new HauteMer(Ocean.ALEA));
 //		new Controleur(new HauteMer(Ocean.BARRE));
 //		new Controleur(new HauteMer(Ocean.CANON));
 //		new Controleur(new HauteMer(Ocean.CLOWN), Controleur.ITER_CLOWN);

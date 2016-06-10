@@ -31,11 +31,11 @@ public class CasePeuProfonde extends Case {
 	public void evoluer(IOcean copie, int i, int j) {
 		int nbVivantsAutour = copie.compterVoisinsVivants(i, j);
 		if (this.contientBestioleVivante()) {
-			if (nbVivantsAutour != 2 && nbVivantsAutour != 3) {
+			if (nbVivantsAutour < 2 || nbVivantsAutour > 4) {
 				this.tuerEventuelOccupant();
 			}
 		} else {
-			if (nbVivantsAutour == 3){
+			if (nbVivantsAutour == 3 || nbVivantsAutour == 8){
 				this.setVivante();
 			}
 		}
